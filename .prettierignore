@@ -2,6 +2,7 @@
 **/.astro/
 **/vercel/
 **/.frontmatter/
+.turbo
 
 #  default ignored files
 # **/.git

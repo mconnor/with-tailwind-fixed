@@ -3,5 +3,8 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "/Users/mikeconnor/.local/share/mise/shims/node"
+  }
 }

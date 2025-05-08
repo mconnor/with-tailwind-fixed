@@ -1,5 +1,17 @@
 {
-  "name": "with-tailwind",
+  "name": "with-tailwind-fixed",
+  "author": "Mike Connor <mike@mikeconnor.tech>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mconnor/with-tailwind-fixed"
+  },
+  "keywords": [
+    "turborepo",
+    "monorepo",
+    "pnpm",
+    "tailwindcss"
+  ],
   "private": true,
   "scripts": {
     "build": "turbo run build",

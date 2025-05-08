@@ -1,5 +1,22 @@
 # Turborepo Tailwind CSS starter
 
+This is my fix of the [Turborepo Tailwindcss example](https://github.com/vercel/turborepo/tree/main/examples/with-tailwind). I found that the example did not work out of the box.
+
+## Changes
+
+- Created two tailwind theme variables in the _tailwind-config_ package
+  - _--color-happy-1000: #e92a67;_
+  - _--color-sad-1000: #2a8af6;_
+- Added the  _tailwind-config_ package as a dependency to the _ui_ package. That is the only way to make the theme variables available in the _ui_ package.
+- installed _prettier-plugin-tailwindcss_ and made a _.prettierrc_ script. NOTE - with this set up, formatting changed the order of the tailwind classes in the _ui_ package. This seemed to make things more tailwindcss@^4 kosher.
+- tweaked the turbo scripts to _clean_ aka trash the dist folder.
+
+## Optional Changes
+
+- I needed to upgrade to PNPM 10
+- Running node v22
+- using tsup to build the _ui_ package. Although building the ui is an option.
+
 This Turborepo starter is maintained by the Turborepo core team.
 
 ## Using this example
@@ -56,3 +73,4 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+- [Tsup](https://github.com/egoist/tsup) for building packages

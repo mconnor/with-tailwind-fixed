@@ -16,12 +16,15 @@ export function Card({
       rel="noopener noreferrer"
       target="_blank"
     >
-      <h2 className="mb-3 text-2xl font-semibold">
-        {title}{" "}
+      <h2 className="bg-happy-1000 mb-3 text-2xl font-semibold">
+        {title}
         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
           -&gt;
         </span>
       </h2>
+      <p className="bg-sad-1000">
+        using theme var --color-happy-1000 and --color-sad-1000
+      </p>
       <p className="m-0 max-w-[30ch] text-sm opacity-50">{children}</p>
     </a>
   );

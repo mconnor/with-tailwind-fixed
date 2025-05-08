@@ -1,4 +1,4 @@
-# Turborepo Tailwind CSS starter
+# [Turborepo](https://turbo.build/repo) Tailwind CSS starter
 
 This is my fix of the [Turborepo Tailwindcss example](https://github.com/vercel/turborepo/tree/main/examples/with-tailwind). I found that the example did not work out of the box.
 
